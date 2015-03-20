@@ -28,8 +28,8 @@ def parse():
 			with open('data/' + filename, 'rb') as csvfile:
 				reader = csv.reader(csvfile, delimiter = ',')
 				for row in reader:
-					lng = row [0]
-					lat = row [1]
+					lng = float(row [0])
+					lat = float(row [1])
 
 					if lat != 0 and lng != 0:
 
